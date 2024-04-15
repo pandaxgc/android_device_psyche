@@ -1,0 +1,7 @@
+allow hal_wifi_default proc_net:file rw_file_perms;
+allow hal_wifi_default vendor_tombstone_data_file:dir { open read search getattr add_name remove_name write };
+allow hal_wifi_default vendor_tombstone_data_file:file { read write open create getattr unlink };
+
+get_prop(hal_wifi_default, persist_vendor_debug_wifi_prop)
+
+allow hal_wifi_default self:capability sys_module;

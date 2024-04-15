@@ -1,0 +1,8 @@
+# Audio
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+tunnel.audio.encode=true
+ro.qc.sdk.audio.ssr=false
+ro.qc.sdk.audio.fluencetype=none
+audio.offload.gapless.enabled=true
+audio.offload.buffer.size.kb=32
+vendor.audio.offload.buffer.size.kb=256

@@ -1,0 +1,31 @@
+# Put name of rom sources dir after ":"
+# Place vendor, system, system_ext, product, odm etc inside root dir of tree and run vendor-update.sh then wait until completed.
+
+May fail if lacking some of those in extract-files.sh
+
+while [ "${#}" -gt 0 ]; do
+    case "${1}" in
+        --only-common )
+                ONLY_COMMON=true
+                ;;
+        --only-target )
+                ONLY_TARGET=true
+                ;;
+        -n | --no-cleanup )
+                CLEAN_VENDOR=false
+                ;;
+        -k | --kang )
+                KANG="--kang"
+                ;;
+        -s | --section )
+                SECTION="${2}"; shift
+                CLEAN_VENDOR=false
+                ;;
+        * )
+                SRC="${1}"
+                ;;
+    esac
+    shift
+done
+
+sources_dir_name:blaze
