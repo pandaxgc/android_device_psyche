@@ -28,4 +28,4 @@ while [ "${#}" -gt 0 ]; do
     shift
 done
 
-sources_dir_name:blaze
+sources_dir_name:Cherish

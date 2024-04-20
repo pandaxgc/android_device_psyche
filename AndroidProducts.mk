@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_psyche.mk
+    $(LOCAL_DIR)/cherish_psyche.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_psyche-eng \
-    blaze_psyche-userdebug \
-    blaze_psyche-user
+    cherish_psyche-eng \
+    cherish_psyche-userdebug \
+    cherish_psyche-user

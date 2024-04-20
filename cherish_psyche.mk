@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from psyche device
 $(call inherit-product, device/xiaomi/psyche/device.mk)
@@ -31,8 +31,8 @@ NO_APERTURE = true
 # GAPPS & GMS
 WITH_GMS := true
 WITH_GAPPS := true
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := Stefi
+CHERISH_BUILD_TYPE := UNOFFICIAL
+CHERISH_MAINTAINER := pandaxgc
 TARGET_GAPPS_ARCH := arm64
 USE_GAPPS := true
 
@@ -45,7 +45,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_ENABLE_BLUR := false
 
-PRODUCT_NAME := blaze_psyche
+PRODUCT_NAME := cherish_psyche
 PRODUCT_DEVICE := psyche
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
@@ -58,3 +58,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_CHARACTERISTICS := nosdcard
 BUILD_FINGERPRINT := Xiaomi/psyche_global/psyche:13/RKQ1.211001.001/V816.0.1.0.TLDMIXM:user/release-keys
+
+# FOD animations
+EXTRA_UDFPS_ANIMATIONS := true
