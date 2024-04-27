@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from psyche device
 $(call inherit-product, device/xiaomi/psyche/device.mk)
@@ -31,8 +31,8 @@ NO_APERTURE = true
 # GAPPS & GMS
 WITH_GMS := true
 WITH_GAPPS := true
-CHERISH_BUILD_TYPE := UNOFFICIAL
-CHERISH_MAINTAINER := pandaxgc
+LINEAGE_BUILD_TYPE := UNOFFICIAL
+LINEAGE_MAINTAINER := pandaxgc
 TARGET_GAPPS_ARCH := arm64
 USE_GAPPS := true
 
@@ -43,9 +43,9 @@ TARGET_EXCLUDES_AUDIOFX := false
 # Ui & Features 
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 
-PRODUCT_NAME := cherish_psyche
+PRODUCT_NAME := lineage_psyche
 PRODUCT_DEVICE := psyche
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
