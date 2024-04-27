@@ -39,7 +39,7 @@ extract_directory_name() {
 
 directory_name=$(extract_directory_name "$vendor_update_file")
 
-./extract-files.sh -k ~/"$directory_name"/device/"$device_manufacturer"/"$script_directory_name" --only-target
+./extract-files.sh -k ~/"$directory_name"/device/"xiaomi"/"psyche" --only-target
 
 read -n 1 -s -r -p "Your vendor is successfully generated. Press any key to exit..."
 
