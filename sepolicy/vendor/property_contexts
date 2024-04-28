@@ -111,6 +111,8 @@ persist.sys.thermal.config                      u:object_r:vendor_thermal_normal
 # Touchfeature
 ro.vendor.touchfeature.type                 u:object_r:vendor_touchfeature_prop:s0
 
+# Iwlan
+persist.vendor.iwlan.logging.logcat                           u:object_r:vendor_cnd_vendor_prop:s0
 
 # Hydra mem tracing
 persist.hydra.mem_trace	  u:object_r:exported_system_prop:s0
