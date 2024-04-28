@@ -26,3 +26,5 @@ Display |  	AMOLED, 68B colors, 120Hz, Dolby Vision, HDR10+, 1100 nits (peak)
 ## Device picture
 
 ![Xiaomi Mi 12X](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-12x-1.jpg "Xiaomi Mi 12X")
+
+### TIPS:you need to generate vendor by yourself,using vendor-update.sh and follow instructions in vendor-update.txt
